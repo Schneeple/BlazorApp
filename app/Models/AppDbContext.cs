@@ -2,7 +2,7 @@ using System.Reflection;
 using app.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace app.Models
+namespace website.Models
 {
     public partial class AppDbContext : DbContext
     {

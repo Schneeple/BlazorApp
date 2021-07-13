@@ -1,15 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using website.Data;
+using website.Models;
 
 namespace website
 {
@@ -30,14 +26,14 @@ namespace website
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
 
-			var connectionString = "server=mysql;userid=root;pwd=rootpass;port=3306;database=blazorapp;sslmode=none;AllowPublicKeyRetrieval=True;";
+			var connectionString = "server=mysql;userid=root;pwd=rootpass;port=3306;database=balzor;sslmode=none;AllowPublicKeyRetrieval=True;";
 
             services.AddDbContext<AppDbContext>
-                          (options => options.UseMySql(connectionString));
+                          (options => options.UseMySQL(connectionString));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, AppDbContext data)
         {
             if (env.IsDevelopment())
             {
@@ -54,6 +50,8 @@ namespace website
             app.UseStaticFiles();
 
             app.UseRouting();
+            
+            data?.Database.Migrate();
 
             app.UseEndpoints(endpoints =>
             {

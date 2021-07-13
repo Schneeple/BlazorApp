@@ -31,7 +31,8 @@ services:
       - blazorapp-mysql
 
   blazorapp:
-    image: blazorapp
+    # image: blazorapp
+    container_name: blazorapp
     build:
       context: .
       dockerfile: app/Dockerfile
@@ -40,5 +41,6 @@ services:
       - blazorapp-mysql
 
     ports:
-      - 5000:443
+      - 5000:80
+      - 5001:443
 

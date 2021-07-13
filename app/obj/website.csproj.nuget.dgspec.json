@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/schneeple/repo/blazor/app/website.csproj": {}
+    "C:\\Users\\cneary\\repo\\github\\BlazorApp\\app\\website.csproj": {}
   },
   "projects": {
-    "/Users/schneeple/repo/blazor/app/website.csproj": {
+    "C:\\Users\\cneary\\repo\\github\\BlazorApp\\app\\website.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/schneeple/repo/blazor/app/website.csproj",
+        "projectUniqueName": "C:\\Users\\cneary\\repo\\github\\BlazorApp\\app\\website.csproj",
         "projectName": "website",
-        "projectPath": "/Users/schneeple/repo/blazor/app/website.csproj",
-        "packagesPath": "/Users/schneeple/.nuget/packages/",
-        "outputPath": "/Users/schneeple/repo/blazor/app/obj/",
+        "projectPath": "C:\\Users\\cneary\\repo\\github\\BlazorApp\\app\\website.csproj",
+        "packagesPath": "C:\\Users\\cneary\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cneary\\repo\\github\\BlazorApp\\app\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/schneeple/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\cneary\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,6 +39,26 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "netcoreapp5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "MySql.Data.EntityFramework": {
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-rc.2.20479.15\\RuntimeIdentifierGraph.json"
         }
       }
     }
