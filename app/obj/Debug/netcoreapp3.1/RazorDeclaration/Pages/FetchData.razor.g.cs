@@ -13,70 +13,70 @@ namespace website.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "/Users/schneeple/repo/website/_Imports.razor"
+#line 1 "/app/_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/Users/schneeple/repo/website/_Imports.razor"
+#line 2 "/app/_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "/Users/schneeple/repo/website/_Imports.razor"
+#line 3 "/app/_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "/Users/schneeple/repo/website/_Imports.razor"
+#line 4 "/app/_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "/Users/schneeple/repo/website/_Imports.razor"
+#line 5 "/app/_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "/Users/schneeple/repo/website/_Imports.razor"
+#line 6 "/app/_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "/Users/schneeple/repo/website/_Imports.razor"
+#line 7 "/app/_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "/Users/schneeple/repo/website/_Imports.razor"
+#line 8 "/app/_Imports.razor"
 using website;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "/Users/schneeple/repo/website/_Imports.razor"
+#line 9 "/app/_Imports.razor"
 using website.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "/Users/schneeple/repo/website/Pages/FetchData.razor"
+#line 3 "/app/Pages/FetchData.razor"
 using website.Data;
 
 #line default
@@ -91,7 +91,7 @@ using website.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 39 "/Users/schneeple/repo/website/Pages/FetchData.razor"
+#line 39 "/app/Pages/FetchData.razor"
        
     private WeatherForecast[] forecasts;
 

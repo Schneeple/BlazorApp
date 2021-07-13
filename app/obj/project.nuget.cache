@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6ret8V/8+hfxihqXyLaIzhfhlSxYcOO0T4lZgLw84NKsr+A+ZkcKSqhUhoyBzI1nECJb1hvmATw/ApxjGOi0XQ==",
+  "dgSpecHash": "3lsG6Kn2Q8ueV7RURc77JacN5nByBDIJdSoKM2TgE8xfoFfmJdtOV/VuwOhZLJ5CDpU5CqKqjulCERiTH1FGBw==",
   "success": true,
-  "projectFilePath": "/Users/schneeple/repo/website/website.csproj",
-  "expectedPackageFiles": [
-    "/Users/schneeple/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
-  ],
+  "projectFilePath": "/Users/schneeple/repo/blazor/app/website.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

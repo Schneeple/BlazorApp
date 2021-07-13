@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/schneeple/repo/website/website.csproj": {}
+    "/Users/schneeple/repo/blazor/app/website.csproj": {}
   },
   "projects": {
-    "/Users/schneeple/repo/website/website.csproj": {
+    "/Users/schneeple/repo/blazor/app/website.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/schneeple/repo/website/website.csproj",
+        "projectUniqueName": "/Users/schneeple/repo/blazor/app/website.csproj",
         "projectName": "website",
-        "projectPath": "/Users/schneeple/repo/website/website.csproj",
+        "projectPath": "/Users/schneeple/repo/blazor/app/website.csproj",
         "packagesPath": "/Users/schneeple/.nuget/packages/",
-        "outputPath": "/Users/schneeple/repo/website/obj/",
+        "outputPath": "/Users/schneeple/repo/blazor/app/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/schneeple/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp5.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net5.0": {
+            "targetAlias": "netcoreapp5.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +35,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0": {
+          "targetAlias": "netcoreapp5.0",
           "imports": [
             "net461",
             "net462",
@@ -47,12 +47,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
