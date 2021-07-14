@@ -26,10 +26,12 @@ namespace website
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
 
-			var connectionString = "server=mysql;userid=root;pwd=rootpass;port=3306;database=balzor;sslmode=none;AllowPublicKeyRetrieval=True;";
+			var connectionString = "server=blazorsql;userid=root;pwd=rootpass;port=3306;database=db;sslmode=none;AllowPublicKeyRetrieval=True;";
 
             services.AddDbContext<AppDbContext>
-                          (options => options.UseMySQL(connectionString));
+                (options => options.UseMySQL(connectionString));
+
+            Console.WriteLine("WORKED");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
