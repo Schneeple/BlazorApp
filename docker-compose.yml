@@ -37,8 +37,7 @@ services:
       mysql_net:
 
   blazorapp:
-    # image: blazorapp
-    container_name: blazorapp
+    image: cneary/blazor
     build:
       context: .
       dockerfile: app/Dockerfile
