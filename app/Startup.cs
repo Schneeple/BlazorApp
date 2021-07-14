@@ -1,9 +1,11 @@
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+// using Pomelo.EntityFrameworkCore.MySql;
 using website.Data;
 using website.Models;
 
@@ -28,8 +30,12 @@ namespace website
 
 			var connectionString = "server=blazorsql;userid=root;pwd=rootpass;port=3306;database=db;sslmode=none;AllowPublicKeyRetrieval=True;";
 
-            services.AddDbContext<AppDbContext>
-                (options => options.UseMySQL(connectionString));
+            services.AddDbContext<AppDbContext>(options => 
+            {
+                options.UseMySql(connectionString,
+                    val => val.EnableRetryOnFailure()
+                );
+            } );
 
         }
 
