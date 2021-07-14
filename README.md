@@ -4,7 +4,8 @@
 
 #### Building Locally
 ```
-docker build -t aspnetapp .
+docker build -t myapp -f app/Dockerfile .
+
 
 docker run -d -v $PWD:/app -p 5001:5001 \
     -p 5000:5000 --name myapp aspnetapp
